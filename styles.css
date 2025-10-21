@@ -177,3 +177,34 @@ button[type="submit"]:hover {
 .login-link a:hover {
   text-decoration: underline;
 }
+
+/* ===============================
+   Versão mobile
+=============================== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Coloca logo em cima e formulário abaixo */
+  }
+
+  .left-panel,
+  .right-panel {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .logo {
+    max-width: 50%; /* Ajusta tamanho do logo no mobile */
+    margin: 0 auto;
+    display: block;
+  }
+
+  .right-panel h1 {
+    text-align: center;
+  }
+
+  .social-login button,
+  form {
+    width: 100%;
+  }
+}
