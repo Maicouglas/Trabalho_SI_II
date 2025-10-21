@@ -1,0 +1,179 @@
+/* ===============================
+   Reset e Container Principal
+=============================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ===============================
+   Lado Esquerdo Azul
+=============================== */
+.left-panel {
+  flex: 1;
+  background-color: #00ABD5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 60%;
+  height: auto;
+}
+
+/* ===============================
+   Formulário Direito
+=============================== */
+.right-panel {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.right-panel h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ===============================
+   Login Social
+=============================== */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-login button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  background-color: #C4C4C4;
+  color: black;
+}
+
+.social-login button:hover {
+  background-color: #00ABD5;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+.icon-social {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* ===============================
+   Texto separador
+=============================== */
+.ou-continua {
+  margin: 15px 0;
+  color: #555;
+  font-weight: 500;
+}
+
+/* ===============================
+   Formulário
+=============================== */
+form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-row input[type="email"],
+.form-row input[type="password"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-row input:focus {
+  border-color: #00ABD5;
+  outline: none;
+}
+
+/* Checkbox */
+.checkbox-row {
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox-row input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Botão de envio */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #C4C4C4;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #00ABD5;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+/* ===============================
+   Link de login
+=============================== */
+.login-link {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.login-link a {
+  color: #00ABD5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

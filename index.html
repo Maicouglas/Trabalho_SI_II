@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNOWLIBRAS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Lado esquerdo azul -->
+  <div class="left-panel">
+    <img src="logo.png" alt="Logo" class="logo">
+  </div>
+
+  <!-- Formulário direito -->
+  <div class="right-panel">
+    <h1>Bem-vindo ao KNOWLIBRAS</h1>
+
+    <!-- Botões de login social -->
+    <div class="social-login">
+      <button type="button" class="btn-facebook">
+        <img src="facebook.png" alt="Facebook" class="icon-social">
+        Continuar com Facebook
+      </button>
+      <button type="button" class="btn-google">
+        <img src="google.png" alt="Google" class="icon-social">
+        Continuar com Google
+      </button>
+    </div>
+
+    <div class="ou-continua">ou continue com email</div>
+
+    <!-- Formulário de registro -->
+    <form id="formRegistro">
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email">
+      </div>
+
+      <div class="form-row">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+      </div>
+
+      <div class="form-row checkbox-row">
+        <input type="checkbox" id="termos" name="termos">
+        <label for="termos">Aceito os Termos, Condições e Políticas</label>
+      </div>
+
+      <div class="form-row">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+
+    <div class="login-link">
+      Já possui uma conta? <a href="#">Faça login</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
